@@ -10,13 +10,13 @@
 </head>
 <body>
     <header>
-        <nav>
+        <nav class="container flexbox">
             <a href="#" class="logo">
                 <img src="./images/logo.svg" alt="logo">
-                <span>Trafalgar</span>
+                <span class="logo-name">Trafalgar</span>
             </a>
 
-            <ul class="navigation-list">
+            <ul class="navigation-list flexbox">
                 <li class="navigation-item"><a href="#" class="link">Home</a></li>
                 <li class="navigation-item"><a href="#" class="link">Find a doctor</a></li>
                 <li class="navigation-item"><a href="#" class="link">Apps</a></li>
@@ -29,8 +29,9 @@
     <main>
 
         <!-- герой -->
-        <section class="hero">
-            <h1>Virtual healthcare for you</h1>
+        <section class="hero container flexbox">
+            <div class="hero-item">
+                <h1>Virtual healthcare for you</h1>
          
             <p>
                 Trafalgar provides progressive, and affordable 
@@ -39,51 +40,52 @@
             </p>
 
             <button type="button" class="button primary">Consult today</button>
+            </div>
 
-            <img src="./images/hero-image.jpg" alt="Trafalgar" width="695">
+            <img src="./images/hero-image.jpg" alt="Trafalgar" width="695" class="hero-item">
         </section>
 
         <!-- наши услуги -->
-        <section class="services">
+        <section class="services container">
             <h2 class="main-title">Our services</h2>
 
             <p>We provide to you the best choiches for you. Adjust it to your health needs and make sure your undergo treatment with our highly qualified doctors you can consult with us which type of service is suitable for your health</p>
 
-            <ul>
-                <li>
+            <ul class="list services-list flexbox">
+                <li class="services-item">
                     <img src="./images/our-activities/search-doctor.png" alt="Search doctor">
                     <h3 class="secondary-title">Search doctor</h3>
                     <p>Choose your doctor from thousands of specialist, general, and trusted hospitals</p>
                 </li>
 
-                <li>
+                <li class="services-item">
                     <img src="./images/our-activities/online-pharmacy.png" alt="Online pharmacy">
                     <h3 class="secondary-title">Online pharmacy</h3>
                     <p>Buy  your medicines with our mobile application with a simple delivery system</p>
                 </li>
 
-                <li>
+                <li class="services-item">
                     <img src="./images/our-activities/consultation.png" alt="Consultation">
 
                     <h3 class="secondary-title">Consultation</h3>
                     <p>Free consultation with our trusted doctors and get the best recomendations</p>
                 </li>
 
-                <li>
+                <li class="services-item">
                     <img src="./images/our-activities/details-info.png" alt="Details info">
 
                     <h3 class="secondary-title">Details info</h3>
                     <p>Free consultation with our trusted doctors and get the best recomendations</p>
                 </li>
 
-                <li>
+                <li class="services-item">
                     <img src="./images/our-activities/emergency-care.png" alt="Emergency care">
 
                     <h3 class="secondary-title">Emergency care</h3>
                     <p>You can get 24/7 urgent care for yourself or your children and your lovely family</p>
                 </li>
 
-                <li>
+                <li class="services-item">
                     <img src="./images/our-activities/tracking.png" alt="Tracking">
                     
                     <h3 class="secondary-title">Tracking</h3>

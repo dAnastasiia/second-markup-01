@@ -26,6 +26,23 @@ a{
 	text-decoration: none;
 }
 
+.container{
+	width: 1200px;
+	padding-right: 15px;
+	padding-left: 15px;
+	margin-right: auto;
+	margin-left: auto;
+
+	padding-top: 100px;
+	padding-bottom: 100px;
+
+	outline: 1px solid tomato;
+}
+
+.flexbox{
+	display: flex;
+}
+
 .visually-hidden {
 	position: absolute !important;
 	clip: rect(1px 1px 1px 1px);
@@ -37,13 +54,21 @@ a{
 	overflow: hidden;
 }
 
-/* Navigation */
-
 .logo{
 	color: var(--logo-text-color);
 	font-weight: 700;
 	font-size: 24px;
 	line-height: 1.25;
+
+	margin-right: auto;
+}
+
+.logo-name{
+	display: inline-block;
+	margin-top: 25px;
+	margin-right: 0;
+	margin-bottom: 25px;
+	margin-left: 20px;
 }
 
 .navigation-item{
@@ -53,25 +78,51 @@ a{
 	line-height: 1.278;
 }
 
+.navigation-item:not(:last-child){
+	margin-right: 40px;
+}
+
 .navigation-item .link:hover,
 .navigation-item .link:focus{
 	color: var(--primary-title-text-color);
 	font-weight: 700;
 }
 
-/* Hero */
+nav.container{
+	padding-top: 0;
+	padding-bottom: 0;
+}
+
+nav.flexbox{
+	align-items: center;
+}
 
 .hero h1{
 	color: var(--primary-title-text-color);
 	font-weight: 700;
 	font-size: 48px;
 	line-height: 1.17;
+
+	margin-top: 50px;
+	margin-bottom: 0;
 }
 
 .hero p{
 	font-weight: 300;
 	font-size: 21px;
 	line-height: 1.52;
+
+	margin-top: 25px;
+	margin-bottom: 50px;
+}
+
+.hero-item{
+	width: calc((100% - 30px) / 2);
+	align-items: center;
+}
+
+.hero-item:not(:last-child){
+	margin-right: 30px;
 }
 
 .button{
@@ -82,6 +133,10 @@ a{
 	padding: 3px 40px;
 	border: 1px solid var(--accent-color);
 	border-radius: 55px;
+}
+
+.hero.button{
+	margin: 0;
 }
 
 .primary{
@@ -101,6 +156,32 @@ a{
 	font-size: 36px;
 	line-height: 1.56;
 	text-align: center;
+
+	margin: 0;
+}
+
+.services-list{
+	flex-wrap: wrap;
+	padding: 0;
+	margin-top: 35px;
+	margin-bottom: 70px;
+}
+
+.services-item{
+    width: calc((100% - 3 * 30px) / 3);
+
+	padding-top: 25px;
+	padding-right: 40px;
+	padding-bottom: 25px;
+	padding-left: 40px;
+}
+
+.services-item:not(:nth-child(-n + 3)){
+	margin-top: 30px;
+}
+
+.services-item:not(:nth-child(3n)){
+	margin-right: 30px;
 }
 
 .services > p,
@@ -112,6 +193,9 @@ a{
 
 .services > p{
 	text-align: center;
+
+	margin-top: 25px;
+	margin-bottom: 0;
 }
 
 .services .secondary-title{
@@ -127,6 +211,10 @@ a{
 	font-weight: 700;
 	font-size: 36px;
 	line-height: 1.56;
+}
+
+.services-item{
+
 }
 
 .feedback .main-title{
