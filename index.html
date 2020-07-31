@@ -12,15 +12,15 @@
     <header>
         <nav class="container flexbox">
             <a href="#" class="logo">
-                <img src="./images/logo.svg" alt="logo">
+                <img src="./images/logo.svg" alt="logo" class="img-logo">
                 <span class="logo-name">Trafalgar</span>
             </a>
 
-            <ul class="navigation-list flexbox">
+            <ul class="list navigation-list flexbox">
                 <li class="navigation-item"><a href="#" class="link">Home</a></li>
                 <li class="navigation-item"><a href="#" class="link">Find a doctor</a></li>
                 <li class="navigation-item"><a href="#" class="link">Apps</a></li>
-                <li class="navigation-item"><a href="#">Testimonials</a></li>
+                <li class="navigation-item"><a href="#" class="link">Testimonials</a></li>
                 <li class="navigation-item"><a href="#" class="link">About us</a></li>
             </ul>
         </nav>        
@@ -97,40 +97,50 @@
         </section>
 
         <!-- наши предложения и возможности -->
-        <section class="propositions">
+        <section class="propositions container">
             <h2 class="visually-hidden">Our proposition</h2>
 
-            <ul>
-                <li>
-                    <img src="./images/healthcare.jpg" alt="Healthcare" width="650">
+            <ul class="list propositions-list">
+                <li class="propositions-item flexbox">
+                    <img src="./images/healthcare.jpg" alt="Healthcare" width="650" class="proposition">
 
-                    <h3 class="main-title">Leading healthcare providers</h3>
-                    <p>Trafalgar provides progressive, and affordable healthcare, accessible on mobile and online for everyone. To us, it’s not just work. We take pride in the solutions we deliver</p>
+                    <div class="proposition text">
+                        <h3 class="main-title">Leading healthcare providers</h3>
+                        <p>Trafalgar provides progressive, and affordable healthcare, accessible on mobile and online for everyone. To us, it’s not just work. We take pride in the solutions we deliver</p>
 
-                    <button type="button" class="button secondary">Learn more</button>
+                        <button type="button" class="button secondary">Learn more</button>
+                    </div>
+                    
                 </li>
 
-                <li>
-                    <img src="./images/mobile-app.jpg" alt="Health tracking" width="650">
-                    <h3 class="main-title">Download our mobile apps</h3>
-                    <p>Our dedicated patient engagement app and 
-                    web portal allow you to access information instantaneously (no tedeous form, long calls, 
-                    or administrative hassle) and securely</p>
-                    <button type="button" class="button secondary">Download</button>
+                <li class="propositions-item flexbox">
+                    <img src="./images/mobile-app.jpg" alt="Health tracking" width="650" class="proposition">
+                    
+                    <div class="proposition text">
+                        <h3 class="main-title">Download our mobile apps</h3>
+                        <p>Our dedicated patient engagement app and 
+                        web portal allow you to access information instantaneously (no tedeous form, long calls, 
+                        or administrative hassle) and securely</p>
+
+                        <button type="button" class="button secondary">Download</button>
+                    </div>
                 </li>
             </ul>
         </section>
 
         <!-- отзывы клиентов -->
-        <section class="feedback">
+        <section class="feedback container">
             <h2 class="main-title">What our customer are saying</h2>
 
-            <ul>
-                <li>
-                    <img src="./images/clients/edward-newgate.jpg" alt="Edward Newgate">
+            <ul class="list feedback-list">
+                <li class="feedback-item flexbox">
+                    <img src="./images/clients/edward-newgate.jpg" alt="Edward Newgate" class="text-feedback">
 
-                    <h3 class="name">Edward Newgate</h3>
-                    <p class="job">Founder Circle</p>
+                    <div class="text-feedback">
+                        <h3 class="name">Edward Newgate</h3>
+                        <p class="job">Founder Circle</p>
+                    </div>
+
                     <p class="text-feedback">“Our dedicated patient engagement app and web portal allow you to access information instantaneously (no tedeous form, long calls, or administrative hassle) and securely”</p>
                 </li>
 
@@ -155,32 +165,38 @@
         </section>
 
         <!-- полезная информация -->
-        <section class="articles">
+        <section class="articles container">
             <h2 class="main-title">Check out our latest article</h2>
 
-            <ul>
-                <li>
+            <ul class="list articles-list flexbox">
+                <li class="articles-item">
                     <img src="./images/articles/disease-detection.jpg" alt="Disease detection" width="350">
 
-                    <h3 class="tretiary-title">Disease detection, check up in the laboratory</h3>
-                    <p>In this case, the role of the health laboratory is very important to do a disease detection...</p>
-                    <a href="#" class="link">Read more</a>
+                    <div class="article-descr">
+                        <h3 class="tretiary-title">Disease detection, check up in the laboratory</h3>
+                        <p>In this case, the role of the health laboratory is very important to do a disease detection...</p>
+                        <a href="#" class="link">Read more</a>
+                    </div>
                 </li>
 
-                <li>
+                <li class="articles-item">
                     <img src="./images/articles/herbal-medicines.jpg" alt="Herbal medicines" width="350">
 
-                    <h3 class="tretiary-title">Herbal medicines that are safe for consumption</h3>
-                    <p>Herbal medicine is very widely used at this time because of its very good for your health...</p>
-                    <a href="#" class="link">Read more</a>
+                    <div class="article-descr">
+                        <h3 class="tretiary-title">Herbal medicines that are safe for consumption</h3>
+                        <p>Herbal medicine is very widely used at this time because of its very good for your health...</p>
+                        <a href="#" class="link">Read more</a>
+                    </div>
                 </li>
 
-                <li>
+                <li class="articles-item">
                     <img src="./images/articles/natural-care.jpg" alt="Natural care" width="350">
 
-                    <h3 class="tretiary-title">Natural care for healthy facial skin</h3>
-                    <p>A healthy lifestyle should start from now and also for your skin health. There are some...</p>
-                    <a href="#" class="link">Read more</a>
+                    <div class="article-descr">
+                        <h3 class="tretiary-title">Natural care for healthy facial skin</h3>
+                        <p>A healthy lifestyle should start from now and also for your skin health. There are some...</p>
+                        <a href="#" class="link">Read more</a>
+                    </div>
                 </li>
             </ul>
 
@@ -190,60 +206,55 @@
 
     <footer>
 
-        <h2 class="visually-hidden">Footer</h2>
+        <div class="container flexbox">
+                <h2 class="visually-hidden">Footer</h2>
 
-        <!-- общая информация -->
-        <div>
-            <a href="#" class="logo">
-                <img src="./images/logo.svg" alt="logo">
-                <span>Trafalgar</span>
-            </a>
+            <!-- общая информация -->
+            <div class="footer-info">
+                <a href="#" class="logo">
+                    <img src="./images/logo.svg" alt="logo" class="img-logo">
+                    <span class="logo-name">Trafalgar</span>
+                </a>
 
-            <p class="short-info">Trafalgar provides progressive, and affordable healthcare, accessible on mobile and online for everyone</p>
+                <p class="short-info">Trafalgar provides progressive, and affordable healthcare, accessible on mobile and online for everyone</p>
 
-            <p class="copyright">&copyTrafalgar PTY LTD 2020. All rights reserved</p>
+                <p class="copyright">&copyTrafalgar PTY LTD 2020. All rights reserved</p>
+            </div>
+
+            <div class="footer-menu">
+                <h3 class="footer-title">Company</h3>
+
+                <ul class="list footmenu-list">
+                    <li class="footer-item">About</li>
+                    <li class="footer-item">Testimonials</li>
+                    <li class="footer-item">Find a doctor</li>
+                    <li class="footer-item">Apps</li>
+                </ul>
+            </div>
+
+            <div class="footer-menu">
+                <h3 class="footer-title">Region</h3>
+
+                <ul class="list footmenu-list">
+                    <li class="footer-item">Indonesia</li>
+                    <li class="footer-item">Singapore</li>
+                    <li class="footer-item">Hongkong</li>
+                    <li class="footer-item">Canada</li>
+                </ul>
+            </div>
+
+            <div class="footer-menu">
+                <h3 class="footer-title">Help</h3>
+
+                <ul class="list footmenu-list">
+                    <li class="footer-item">Help center</li>
+                    <li class="footer-item">Contact support</li>
+                    <li class="footer-item">Instructions</li>
+                    <li class="footer-item">How it works</li>
+                </ul>
+            </div>
         </div>
-
-        <div>
-            <ul>
-                <li>
-                    <h3 class="footer-title">Company</h3>
-
-                    <ul>
-                        <li class="footer-item">About</li>
-                        <li class="footer-item">Testimonials</li>
-                        <li class="footer-item">Find a doctor</li>
-                        <li class="footer-item">Apps</li>
-                    </ul>
-                </li>
-            </ul>
-
-            <ul>
-                <li>
-                    <h3 class="footer-title">Region</h3>
-
-                    <ul>
-                        <li class="footer-item">Indonesia</li>
-                        <li class="footer-item">Singapore</li>
-                        <li class="footer-item">Hongkong</li>
-                        <li class="footer-item">Canada</li>
-                    </ul>
-                </li>
-            </ul>
-
-            <ul>
-                <li>
-                    <h3 class="footer-title">Help</h3>
-
-                    <ul>
-                        <li class="footer-item">Help center</li>
-                        <li class="footer-item">Contact support</li>
-                        <li class="footer-item">Instructions</li>
-                        <li class="footer-item">How it works</li>
-                    </ul>
-                </li>
-            </ul>
-        </div>
+       
     </footer>
 </body>
 </html>

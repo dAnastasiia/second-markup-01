@@ -17,8 +17,15 @@ body{
 	font-weight: 300;
 }
 
-ul{
+img{
+	display: block;
+	margin: 0;
+	padding: 0;
+}
+
+.list{
 	list-style: none;
+	padding: 0;
 }
 
 a{
@@ -36,7 +43,7 @@ a{
 	padding-top: 100px;
 	padding-bottom: 100px;
 
-	outline: 1px solid tomato;
+	/* outline: 1px solid tomato; */
 }
 
 .flexbox{
@@ -61,6 +68,10 @@ a{
 	line-height: 1.25;
 
 	margin-right: auto;
+}
+
+.img-logo{
+	display: inline-block;
 }
 
 .logo-name{
@@ -126,6 +137,7 @@ nav.flexbox{
 }
 
 .button{
+	display: block;
 	font-weight: 700;
 	font-size: 18px;
 	line-height: 3.333;
@@ -149,7 +161,8 @@ nav.flexbox{
 	background-color: #ffffff;
 }
 
-.services .main-title{
+.services .main-title,
+.articles .main-title{
 	color: var(--primary-title-text-color);
 
 	font-weight: 700;
@@ -162,6 +175,7 @@ nav.flexbox{
 
 .services-list{
 	flex-wrap: wrap;
+	align-items: baseline;
 	padding: 0;
 	margin-top: 35px;
 	margin-bottom: 70px;
@@ -181,7 +195,7 @@ nav.flexbox{
 }
 
 .services-item:not(:nth-child(3n)){
-	margin-right: 30px;
+	margin-right: 40px;
 }
 
 .services > p,
@@ -213,7 +227,10 @@ nav.flexbox{
 	line-height: 1.56;
 }
 
-.services-item{
+.services > .button,
+.articles .button{
+	margin-right: auto;
+	margin-left: auto;
 
 }
 
@@ -224,10 +241,89 @@ nav.flexbox{
 	color: var(--secondary-title-text-color);
 }
 
+.propositions-list{
+	flex-wrap: nowrap;
+	flex-direction: row-reverse;
+}
+
+.propositions-item:not(:first-child){
+	margin-top: 50px;
+}
+
 .propositions p{
 	font-weight: 300;
 	font-size: 18px;
 	line-height: 1.67;
+}
+
+.proposition{
+	width: calc((100% - 30px) / 2);
+	align-items: center;
+}
+
+.proposition:not(:last-child){
+	margin-right: 30px;
+}
+
+.proposition.text{
+	padding-top: 40px;
+	padding-right: 40px;
+	padding-bottom: 40px;
+	padding-left: 40px;
+}
+
+.propositions .main-title{
+	color: var(--primary-title-text-color);
+
+	font-weight: 700;
+	font-size: 36px;
+	line-height: 1.56;
+
+	margin: 0;
+}
+
+.propositions p{
+	margin-top: 65px;
+	margin-bottom: 45px;
+}
+
+.feedback-list{
+	margin-top: 80px;
+}
+
+.feedback .main-title{
+	/* teporary bg */
+	background-color: var(--nav-text-color);
+	
+	color: var(--secondary-title-text-color);
+
+	font-weight: 700;
+	font-size: 36px;
+	line-height: 1.56;
+	text-align: center;
+
+	margin: 0;
+}
+.feedback-item{
+	align-items: center;
+}
+
+p.text-feedback{
+	width: calc(50% - 15px);
+	margin-left: auto;
+	padding-top: 40px;
+	padding-right: 40px;
+	padding-bottom: 40px;
+	padding-left: 40px;
+}
+
+img.text-feedback,
+div.text-feedback{
+	width: calc((50% - 15px - 2* 30px) / 2);
+}
+
+div.text-feedback{
+	margin-left: 30px;
 }
 
 .name{
@@ -239,6 +335,8 @@ nav.flexbox{
 	font-weight: 700;
 	font-size: 22px;
 	line-height: 2.18;
+	margin-top: 0;
+	margin-bottom: 0;
 }
 
 .job{
@@ -250,6 +348,8 @@ nav.flexbox{
 	font-weight: 400;
 	font-size: 18px;
 	line-height: 2.67;
+	margin-top: 12px;
+	margin-bottom: 0;
 }
 
 .text-feedback{
@@ -269,6 +369,9 @@ nav.flexbox{
 	font-weight: 700;
 	font-size: 21px;
 	line-height: 1.52;
+
+	margin-top: 0;
+	margin-bottom: 0;
 }
 
 .articles .link{
@@ -279,6 +382,33 @@ nav.flexbox{
 	line-height: 1.65;
 }
 
+.articles-list{
+	align-items: baseline;
+
+	margin-top: 105px;
+	margin-bottom: 80px;
+}
+
+.articles-item{
+	width: calc((100% - 3 * 30px) / 3);
+}
+
+.articles-item:not(:last-child){
+	margin-right: 30px;
+}
+
+.articles  p{
+	margin-top: 25px;
+	margin-bottom: 10px;
+}
+
+.article-descr{
+	margin: 0;
+	padding-top: 30px;
+	padding-right: 60px;
+	padding-bottom: 35px;
+	padding-left: 30px;
+}
 
 footer{
 	/* teporary bg */
@@ -287,30 +417,59 @@ footer{
 	color: var(--secondary-title-text-color);
 }
 
+footer > div.container{
+	padding-top: 100px;
+	padding-right: 70px;
+	padding-bottom: 100px;
+	padding-left: 70px;
+
+	align-items: baseline;
+}
+
 footer .logo{
 	color: var(--secondary-title-text-color);
+}
+
+.footer-menu{
+	margin-left: 150px;
+}
+
+.footer-info{
+	width: 380px;
 }
 
 .short-info{
 	font-weight: 300;
 	font-size: 18px;
 	line-height: 1.56;
+
+	margin-top: 18px;
+	margin-bottom: 0;
 }
 
 .copyright{
 	font-weight: 300;
 	font-size: 16px;
 	line-height: 1.75;
+
+	margin-top: 35px;
+	margin-bottom: 0;
 }
 
 .footer-title{
 	font-weight: 700;
 	font-size: 20px;
 	line-height: 3;
+
+	margin: 0;
 }
 
 .footer-item{
 	font-weight: 300;
 	font-size: 18px;
 	line-height: 2.11;
+}
+
+.footer-item:not(:first-child){
+	margin-top: 8px;
 }
